@@ -1,26 +1,211 @@
 @import "tailwindcss";
 
+/* ==========================================
+   DESIGN TOKENS
+========================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #081b33;
+  --background-secondary: #102a43;
+  --surface: #15395b;
+
+  --primary: #c9a03c;
+  --primary-light: #d8b456;
+
+  --text: #ffffff;
+  --text-secondary: #c6d1dc;
+  --muted: #8da2b8;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+  --radius: 24px;
+
+  --container: 1280px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ==========================================
+   BASE
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #071728;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair), serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ==========================================
+   REUSABLE CLASSES
+========================================== */
+
+.container-custom {
+  width: min(var(--container), 92%);
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding: 7rem 0;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.gold-gradient {
+  background: linear-gradient(
+    135deg,
+    #c9a03c,
+    #d9b65a
+  );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #d9b65a
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-premium {
+  box-shadow: var(--shadow);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 30px;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  transition: 0.35s ease;
+
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+
+  background: var(--primary-light);
+
+  box-shadow: 0 15px 40px rgba(201,160,60,.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 30px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,.2);
+
+  color: white;
+
+  transition: .35s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+
+  color: var(--primary);
+
+  transform: translateY(-4px);
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.section-padding{
+padding:5rem 0;
+}
+
 }
