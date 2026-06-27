@@ -33,7 +33,7 @@ export default function About() {
             <div className="overflow-hidden rounded-3xl shadow-2xl">
 
               <Image
-                src="/office/office1.png"
+                src="/office/office1.PNG"
                 alt="Verkoper Office"
                 width={450}
                 height={450}
