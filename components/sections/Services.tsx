@@ -54,7 +54,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#F8FAFC] py-24"
+      className="bg-[#F8FAFC] pt-32 pb-24"
     >
       <div className="container-custom">
 
@@ -64,22 +64,20 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto mt-8 max-w-8xl text-x1 leading-9 text-slate-300 text-center"
         >
-          <p className="font-semibold uppercase tracking-[4px] text-[#C9A03C]">
-            Solutions Designed for Developers
-          </p>
 
-          <h2 className="mt-4 text-5xl font-bold text-[#081B33]">
+          <h2 className="mt-7 text-5xl md:text-6xl font-serif font-semibold text-[#081B33] leading-tight">
             Everything You Need
             <br />
             To Sell Faster
           </h2>
 
-          <p className="mt-6 text-lg text-slate-600">
+          <p className="mt-6 max-w-8x1 text-1g leading-8 text-slate-600 text-centre">
             Verkoper Property Solutions provides complete sales,
-            marketing and developer-focused solutions from launch
-            planning to inventory closures.
+            marketing and developer-focused solutions—from launch
+            planning and branding to lead generation, customer
+            engagement and inventory closures.
           </p>
         </motion.div>
 
@@ -89,48 +87,40 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 rounded-[36px] bg-[#081B33] p-10 shadow-2xl"
+          className="mt-20 rounded-[36px] bg-[#081B33] p-12 shadow-2xl"
         >
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex items-start gap-8">
+
+            <div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-[#C9A03C]/20">
+              <HiOutlineOfficeBuilding className="text-4xl text-[#C9A03C]" />
+            </div>
 
             <div>
 
-              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#C9A03C]/20">
-
-                <HiOutlineOfficeBuilding className="text-4xl text-[#C9A03C]" />
-
-              </div>
-
-              <p className="uppercase tracking-[4px] text-[#C9A03C]">
+              <p className="uppercase tracking-[4px] font-semibold text-[#C9A03C]">
                 Featured Service
               </p>
 
-              <h3 className="mt-4 text-4xl font-bold text-white">
+              <h3 className="mt-4 text-4xl font-serif font-semibold text-white">
                 Sole Selling Mandates
               </h3>
 
-              <p className="mt-6 max-w-w1 text-1g leading-8 text-slate-300">
-                We become your exclusive sales partner, managing
-                strategy, branding, marketing, lead generation,
-                customer engagement and inventory closures while
-                you focus on project development.
+              <p className="mt-6 max-w-3xl text-lg leading-9 text-slate-300">
+                We become your exclusive sales partner, managing strategy,
+                branding, marketing, lead generation, customer engagement
+                and inventory closures while you stay focused on delivering
+                exceptional real estate projects.
               </p>
 
             </div>
-
-            <a
-              href="#contact"
-              className="rounded-full bg-[#C9A03C] px-8 py-4 font-semibold text-white transition hover:scale-105"
-            >
-              Let's Talk
-            </a>
 
           </div>
         </motion.div>
 
         {/* Service Grid */}
+                {/* Service Grid */}
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -140,31 +130,29 @@ export default function Services() {
                 key={service.title}
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="group rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-3 hover:border-[#C9A03C] hover:shadow-xl"
+                className="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#C9A03C] hover:shadow-xl"
               >
+                {/* Icon */}
 
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#C9A03C]/10 transition-all duration-300 group-hover:bg-[#C9A03C]">
 
-                  <Icon className="text-3xl text-[#C9A03C] group-hover:text-white" />
+                  <Icon className="text-3xl text-[#C9A03C] transition-all duration-300 group-hover:text-white" />
 
                 </div>
 
-                <h3 className="mt-8 text-2xl font-semibold text-[#081B33]">
+                {/* Title */}
+
+                <h3 className="mt-8 text-2xl font-semibold leading-snug text-[#081B33]">
                   {service.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-slate-600">
+                {/* Description */}
+
+                <p className="mt-5 flex-grow text-base leading-8 text-slate-600">
                   {service.description}
                 </p>
-
-                <a
-                  href="#contact"
-                  className="mt-8 inline-block font-semibold text-[#C9A03C] transition group-hover:translate-x-2"
-                >
-                  Learn More →
-                </a>
 
               </motion.div>
             );

@@ -37,7 +37,7 @@ const verkoper = [
 
 export default function PartnershipModel() {
   return (
-    <section className="bg-[#081B33] py-28">
+    <section className="bg-[#081B33] py-24 pb-46">
       <div className="container-custom">
 
         {/* Heading */}
@@ -46,7 +46,7 @@ export default function PartnershipModel() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto mb-20 max-w-8xl text-center"
         >
           <p className="uppercase tracking-[4px] text-[#C9A03C] font-semibold">
             Our Partnership Model
@@ -60,7 +60,7 @@ export default function PartnershipModel() {
             </span>
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-slate-300">
+          <p className="mx-auto mt-8 max-w-8xl text-center text-xl leading-10 text-slate-200">
             We become your dedicated sales and marketing partner,
             allowing your team to focus on construction while
             Verkoper manages the complete customer acquisition journey.
@@ -195,12 +195,7 @@ export default function PartnershipModel() {
             </span>
           </h3>
 
-          <a
-            href="#contact"
-            className="btn-primary mt-10 inline-flex"
-          >
-            Let's Talk
-          </a>
+        
         </motion.div>
 
       </div>

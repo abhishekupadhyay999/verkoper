@@ -6,7 +6,7 @@ import PartnershipModel from "@/components/sections/PartnershipModel";
 import Services from "@/components/sections/Services";
 import WhyChoose from "@/components/sections/WhyChoose";
 import Leadership from "@/components/sections/Leadership";
-import Contact from "@/components/sections/Contact";
+import ProjectForm from "@/components/sections/ProjectForm";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <Services/>
       <WhyChoose/>
       <Leadership/>
-      <Contact/>
+      <ProjectForm/>
       <Footer/>
 
     </>

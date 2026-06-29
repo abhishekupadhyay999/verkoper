@@ -99,9 +99,9 @@ export default function Navbar() {
 
               <a
                 href="#contact"
-                className="rounded-full bg-[#C9A03C] px-7 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#d8ad47]"
+                className=" px-7 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#d8ad47]"
               >
-                Let's Talk
+                we're Hiring
               </a>
 
             </div>

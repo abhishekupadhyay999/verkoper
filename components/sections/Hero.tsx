@@ -44,22 +44,8 @@ export default function Hero() {
 
       <div className="container-custom relative z-10 pt-28 sm:pt-40 md:pt-24 lg:pt-0">
 
-        <div className="max-w-3xl">
+        <div className="max-w-4xl flex flex-col items-start">
 
-          {/* Trust Badge */}
-
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mt-14 md:mt-0 mb-8 inline-flex items-center rounded-full border border-[#C9A03C]/40 bg-[#C9A03C]/10 px-4 py-2"
-          >
-            <span className="mr-2 text-[#C9A03C]">★</span>
-
-            <span className="text-sm font-medium uppercase tracking-[3px] text-white">
-              Trusted Sales & Marketing Partner
-            </span>
-          </motion.div>
 
           {/* Heading */}
 
@@ -83,7 +69,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="mt-10 max-w-2xl text-xl leading-9 text-slate-200"
+            className="mt-8 max-w-[640px] text-xl leading-9 text-slate-200 text-left"
           >
             Exclusive Sole Selling and Project Marketing solutions
             for real estate developers across Palghar, Vasai,
@@ -91,16 +77,16 @@ export default function Hero() {
           </motion.p>
 
           {/* Buttons */}
-
+{/*
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="mt-12 flex flex-wrap gap-5"
+            className="mt-10 flex items-center gap-5"
           >
             <a
               href="#contact"
-              className="inline-flex items-center rounded-full bg-[#C9A03C] px-8 py-4 text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#d8ad47]"
+              className="inline-flex items-center justify-center rounded-x1 bg-[#C9A03C] px-18 py-4 text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#d8ad47] whitespace-nowrap"
             >
               Schedule Consultation
 
@@ -109,20 +95,20 @@ export default function Hero() {
 
             <a
               href="#services"
-              className="inline-flex items-center rounded-full border border-white/30 bg-white/5 px-8 py-4 text-lg font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-[#081B33]"
+              className="inline-flex items-center rounded-x1 border-white/30 bg-white/5 px-8 py-4 text-lg font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-[#081B33]"
             >
               Explore Services
             </a>
 
           </motion.div>
-
+*/}
           {/* Locations */}
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
-            className="mt-14 flex flex-wrap items-center gap-5 text-sm uppercase tracking-[3px] text-[#C9A03C]"
+            className="mt-8 flex flex-wrap items-center gap-6 text-sm uppercase tracking-[3px] text-[#C9A03C]"
           >
             <span>Palghar</span>
 
@@ -150,7 +136,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4 }}
-            className="mt-16 flex flex-wrap gap-12"
+            className="mt-10 flex items-center gap-20"
           >
             <div>
               <h3 className="text-4xl font-bold text-[#C9A03C]">

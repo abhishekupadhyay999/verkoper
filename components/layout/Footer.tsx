@@ -1,154 +1,180 @@
 "use client";
 
-import Image from "next/image";
+import Link from "next/link";
 import {
+  HiOutlineLocationMarker,
   HiOutlinePhone,
   HiOutlineMail,
-  HiOutlineLocationMarker,
 } from "react-icons/hi";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#061529] border-t border-white/10">
+    <footer className="bg-[#081B33] text-white">
+
       <div className="container-custom py-20">
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-14 lg:grid-cols-4">
 
           {/* Company */}
 
           <div>
-            <Image
-              src="/logo/logo.png"
-              alt="Verkoper Property Solutions"
-              width={170}
-              height={60}
-            />
 
-            <p className="mt-6 leading-8 text-slate-400">
-              Verkoper Property Solutions is a dedicated real estate
-              sales and project marketing company helping developers
-              accelerate project sales through strategic planning,
-              branding and exclusive sole selling mandates.
+            <h2 className="text-3xl font-serif font-semibold">
+              Verkoper
+            </h2>
+
+            <p className="mt-1 text-[#C9A03C] font-medium">
+              Property Solutions
             </p>
+
+            <p className="mt-6 leading-8 text-slate-300">
+              Delivering strategic real estate sales, project marketing,
+              and sole selling solutions that help developers maximize
+              project success with transparency, professionalism,
+              and long-term value.
+            </p>
+
+          </div>
+
+          {/* Corporate Office */}
+
+          <div>
+
+            <h3 className="mb-6 text-xl font-semibold">
+              Corporate Office
+            </h3>
+
+            <div className="flex items-start gap-3">
+
+              <HiOutlineLocationMarker className="mt-1 text-2xl text-[#C9A03C]" />
+
+              <p className="leading-8 text-slate-300">
+                105, Kanchan Business Center,
+                <br />
+                Opp. Zudio,
+                <br />
+                Mahim-Manor Road,
+                <br />
+                Palghar West,
+                <br />
+                Maharashtra - 401404
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* Branch Office */}
+
+          <div>
+
+            <h3 className="mb-6 text-xl font-semibold">
+              Branch Office
+            </h3>
+
+            <div className="flex items-start gap-3">
+
+              <HiOutlineLocationMarker className="mt-1 text-2xl text-[#C9A03C]" />
+
+              <p className="leading-8 text-slate-300">
+                248, Shree Ram Square,
+                <br />
+                Shreeram Nagar,
+                <br />
+                Vartak Ward,
+                <br />
+                Virar West,
+                <br />
+                Maharashtra - 401303
+              </p>
+
+            </div>
+
           </div>
 
           {/* Quick Links */}
+                    <div>
 
-          <div>
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="mb-6 text-xl font-semibold">
               Quick Links
             </h3>
 
-            <ul className="mt-6 space-y-4 text-slate-400">
+            <ul className="space-y-4">
 
               <li>
-                <a href="#home" className="hover:text-[#C9A03C] transition">
+                <Link
+                  href="#home"
+                  className="text-slate-300 transition hover:text-[#C9A03C]"
+                >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#about" className="hover:text-[#C9A03C] transition">
+                <Link
+                  href="#about"
+                  className="text-slate-300 transition hover:text-[#C9A03C]"
+                >
                   About
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#services" className="hover:text-[#C9A03C] transition">
+                <Link
+                  href="#services"
+                  className="text-slate-300 transition hover:text-[#C9A03C]"
+                >
                   Services
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#leadership" className="hover:text-[#C9A03C] transition">
+                <Link
+                  href="#leadership"
+                  className="text-slate-300 transition hover:text-[#C9A03C]"
+                >
                   Leadership
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#contact" className="hover:text-[#C9A03C] transition">
+                <Link
+                  href="#contact"
+                  className="text-slate-300 transition hover:text-[#C9A03C]"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
 
             </ul>
-          </div>
 
-          {/* Services */}
+            {/* Contact */}
 
-          <div>
-            <h3 className="text-xl font-semibold text-white">
-              Services
-            </h3>
+            <div className="mt-10">
 
-            <ul className="mt-6 space-y-4 text-slate-400">
+              <h3 className="mb-6 text-xl font-semibold">
+                Contact
+              </h3>
 
-              <li>Sole Selling Mandates</li>
+              <div className="space-y-5">
 
-              <li>Project Marketing</li>
+                <div className="flex items-center gap-3">
 
-              <li>Sales Management</li>
+                  <HiOutlinePhone className="text-xl text-[#C9A03C]" />
 
-              <li>Digital Marketing</li>
-
-              <li>Channel Partner Network</li>
-
-            </ul>
-          </div>
-
-          {/* Contact */}
-
-          <div>
-
-            <h3 className="text-xl font-semibold text-white">
-              Contact
-            </h3>
-
-            <div className="mt-6 space-y-5">
-
-              <div className="flex gap-4">
-
-                <HiOutlinePhone className="mt-1 text-xl text-[#C9A03C]" />
-
-                <div>
-
-                  <p className="text-slate-400">Phone</p>
-
-                  <p className="text-white">
-                    +91 95451 88288
-                  </p>
+                  <span className="text-slate-300">
+                    +91 95455 88688
+                  </span>
 
                 </div>
 
-              </div>
+                <div className="flex items-center gap-3">
 
-              <div className="flex gap-4">
+                  <HiOutlineMail className="text-xl text-[#C9A03C]" />
 
-                <HiOutlineMail className="mt-1 text-xl text-[#C9A03C]" />
-
-                <div>
-
-                  <p className="text-slate-400">Email</p>
-
-                  <p className="text-white break-all">
-                    sales@verkoper.co.in
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div className="flex gap-4">
-
-                <HiOutlineLocationMarker className="mt-1 text-xl text-[#C9A03C]" />
-
-                <div>
-
-                  <p className="text-slate-400">Office</p>
-
-                  <p className="text-white">
-                    Palghar • Vasai • Virar • MMR
-                  </p>
+                  <span className="text-slate-300">
+                    info@verkoperpropertysolutions.com
+                  </span>
 
                 </div>
 
@@ -160,21 +186,30 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom */}
+        {/* Bottom Bar */}
 
-        <div className="mt-16 flex flex-col items-center justify-between border-t border-white/10 pt-8 text-center md:flex-row">
+        <div className="mt-16 border-t border-white/10 pt-8">
 
-          <p className="text-slate-500">
-            © 2026 Verkoper Property Solutions. All Rights Reserved.
-          </p>
+          <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row">
 
-          <p className="mt-4 text-slate-500 md:mt-0">
-            Designed & Developed with ❤️ by Verkoper Property Solutions
-          </p>
+            <p className="text-sm text-slate-400">
+              © {new Date().getFullYear()} Verkoper Property Solutions.
+              All Rights Reserved.
+            </p>
+
+            <p className="text-sm text-slate-400">
+              Designed & Developed by
+              <span className="ml-1 font-medium text-[#C9A03C]">
+                Verkoper Property Solutions
+              </span>
+            </p>
+
+          </div>
 
         </div>
 
       </div>
+
     </footer>
   );
 }

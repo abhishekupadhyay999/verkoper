@@ -61,7 +61,7 @@ export default function About() {
               in Real Estate Success
             </h2>
 
-            <p className="mt-8 text-lg text-slate-600">
+            <p className="mt-8 max-w-[560px] text-md leading-8 font-normal text-black">
               Verkoper Property Solutions specializes in Sole Selling
               Mandates and Project Marketing for developers across
               Palghar, Vasai, Virar and the Mumbai Metropolitan Region.

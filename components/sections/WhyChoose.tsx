@@ -58,19 +58,19 @@ export default function WhyChoose() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto mb-20 max-w-8xl flex flex-col items-center text-center"
         >
-          <p className="uppercase tracking-[4px] text-[#C9A03C] font-semibold">
+          <p className="uppercase tracking-[4px] text-[#C9A03C] font-semibold text-center">
             Why Choose Verkoper
           </p>
 
-          <h2 className="mt-4 text-5xl text-white">
+          <h2 className="mt-6 text-5xl md-text-5x1 text-white text-centre">
             Your Trusted Sales &
             <br />
             Marketing Partner
           </h2>
 
-          <p className="mt-6 text-lg text-slate-300">
+          <p className="mt-6 max-w-[560px] text-lg text-slate-300">
             We combine local market knowledge, digital expertise and
             dedicated sales execution to help developers achieve faster
             project sales with complete transparency.
